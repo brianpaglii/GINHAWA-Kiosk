@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+websockets
+# Optional for Cloud Backend
+psycopg2-binary
+passlib[bcrypt]

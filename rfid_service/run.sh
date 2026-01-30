@@ -4,10 +4,8 @@ set -e
 # Ensure we are in the script's directory
 cd "$(dirname "$0")"
 
-if [ ! -d ".venv" ]; then
-    echo "Virtual environment not found. Please run setup_pi.sh first."
-    exit 1
-fi
-
+# Activate virtual environment
 source .venv/bin/activate
+
+# Run the script
 python read_tag.py
